@@ -1,0 +1,11 @@
+node_modules
+.env
+.env.*
+!.env.example
+dist
+*.log
+
+# VS Code media files
+.vscode/*.jpeg
+.vscode/*.jpg
+.vscode/*.png

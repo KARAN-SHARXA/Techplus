@@ -1,0 +1,64 @@
+services:
+  - type: web
+    name: techplus-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+      - key: MONGO_URI_FALLBACK
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: EMAIL
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: EMAIL_RELAY_URL
+        sync: false
+      - key: EMAIL_RELAY_SECRET
+        sync: false
+      - key: EMAIL_FORCE_RELAY
+        value: true
+      - key: EMAIL_TIMEOUT_MS
+        value: 12000
+      - key: EMAIL_STRATEGY_TIMEOUT_MS
+        value: 12000
+      - key: NEWSAPI_KEY
+        sync: false
+      - key: GNEWS_API_KEY
+        sync: false
+      - key: NEWSAPI_URL
+        value: https://newsapi.org/v2/top-headlines
+      - key: GNEWS_API_URL
+        value: https://gnews.io/api/v4/search
+      - key: DEVFOLIO_HACKATHON_FEEDS
+        value: https://devfolio.co/hackathons,https://devfolio.co/explore
+      - key: HACKATHON_SYNC_ON_BOOT
+        value: false
+      - key: CLIENT_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: ALLOW_VERCEL_PREVIEW_ORIGINS
+        value: true
+      - key: COOKIE_SAME_SITE
+        value: none
+      - key: SERVE_STATIC
+        value: false
+      - key: ENABLE_STARTUP_WARMUPS
+        value: false
+      - key: DISABLE_EMAIL_VERIFICATION
+        sync: false
+      - key: JWT_EXPIRES_IN
+        sync: false
+      - key: COOKIE_DOMAIN
+        sync: false
