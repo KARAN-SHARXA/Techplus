@@ -38,7 +38,7 @@ TechPlus is a full-stack developer platform built by developers, for developers.
 
 | Home — Latest News | Roadmaps | Hackathon Discovery |
 |---|---|---|
-| ![Home](./client/public/screenshots/home.png) | ![Roadmaps](./client/public/screenshots/roadmaps.png) | ![Hackathons](./client/public/screenshots/hackathons.png) |
+| ![Home](Home.png) | ![Roadmaps](./client/public/screenshots/roadmaps.png) | ![Hackathons](./client/public/screenshots/hackathons.png) |
 
 | Resources Library | User Profile | Admin Panel |
 |---|---|---|
